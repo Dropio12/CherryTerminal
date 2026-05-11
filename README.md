@@ -4,7 +4,14 @@
 
 <h3><strong>Your Thinking Is the Only Limit. The Data Isn’t.</strong></h3>
 
-State-of-the-art financial intelligence platform with institutional-grade analytics, AI automation, and unlimited data connectivity.
+Native C++20 financial intelligence platform — institutional-grade analytics, real-time trading, and 100+ data connectors in a single binary.
+
+![C++20](https://img.shields.io/badge/C%2B%2B-20-blue?style=flat-square&logo=cplusplus)
+![Qt6](https://img.shields.io/badge/Qt-6.8.3-green?style=flat-square&logo=qt)
+![Python](https://img.shields.io/badge/Python-3.11-yellow?style=flat-square&logo=python)
+![QuantLib](https://img.shields.io/badge/QuantLib-18%20modules-red?style=flat-square)
+![CMake](https://img.shields.io/badge/CMake-3.27-blue?style=flat-square&logo=cmake)
+![License](https://img.shields.io/badge/License-AGPL--3.0-lightgrey?style=flat-square)
 
 <h3>Screenshots</h3>
 
@@ -25,11 +32,30 @@ State-of-the-art financial intelligence platform with institutional-grade analyt
 
 ## Quick Navigation
 
-- [About](#about)
+- [Why Native C++20](#why-native-c20)
+- [Tech Stack](#tech-stack)
 - [Features](#features)
 - [Installation](#installation)
-- [What Sets Us Apart](#what-sets-us-apart)
 - [Roadmap](#roadmap)
+
+---
+
+## Why Native C++20
+
+Most financial tools run on Electron or Python runtimes — they leak memory, struggle with real-time data, and add latency at every layer. Cherry Terminal compiles to a single native binary: no Node.js, no browser engine, no interpreter overhead. The UI runs in Qt6, analytics run in embedded Python via pybind11, and everything performance-critical runs in C++20.
+
+---
+
+## Tech Stack
+
+| Layer | Technology |
+|-------|-----------|
+| **Core** | C++20 — MSVC 19.38 / GCC 12.3 / Apple Clang 15 |
+| **UI** | Qt 6.8.3 — native rendering, no web runtime |
+| **Analytics** | Embedded Python 3.11 via pybind11 |
+| **Quant** | QuantLib — 18 quantitative analysis modules |
+| **Build** | CMake 3.27 + Ninja |
+| **Deployment** | Single native binary — Windows / Linux / macOS |
 
 ---
 
@@ -47,7 +73,7 @@ State-of-the-art financial intelligence platform with institutional-grade analyt
 | 🤖 **AI Agents** | 37 agents across Trader/Investor (Buffett, Graham, Lynch, Munger, Klarman, Marks…), Economic, and Geopolitics frameworks; local LLM support; multi-provider (OpenAI, Anthropic, Gemini, Groq, DeepSeek, MiniMax, OpenRouter, Ollama) |
 | 🌐 **100+ Data Connectors** | DBnomics, Polygon, Kraken, Yahoo Finance, FRED, IMF, World Bank, AkShare, government APIs, plus optional alternative-data overlays such as Adanos market sentiment for equity research |
 | 📈 **Real-Time Trading** | Crypto (Kraken/HyperLiquid WebSocket), equity, algo trading, paper trading engine, 16 broker integrations (Zerodha, Angel One, Upstox, Fyers, Dhan, Groww, Kotak, IIFL, 5paisa, AliceBlue, Shoonya, Motilal, IBKR, Alpaca, Tradier, Saxo) |
-| 🔬 **QuantLib Suite** | 18 quantitative analysis modules — pricing, risk, stochastic, volatility, fixed income |
+| 🔬 **QuantLib Suite** | 18 quantitative analysis modules — derivatives pricing (Black-Scholes, Heston, SABR), yield curves, VaR/CVaR, Monte Carlo with variance reduction, portfolio optimization (mean-variance, Black-Litterman) |
 | 🚢 **Global Intelligence** | Maritime tracking, geopolitical analysis, relationship mapping, satellite data |
 | 🎨 **Visual Workflows** | Node editor for automation pipelines, MCP tool integration |
 | 🧠 **AI Quant Lab** | ML models, factor discovery, HFT, reinforcement learning trading |
@@ -179,17 +205,11 @@ cmake --build build/macos-release
 
 ---
 
-## What Sets Us Apart
+## License
 
-**Cherry Terminal** is an open-source financial platform built for those who refuse to be limited by traditional software. We compete on **analytics depth** and **data accessibility** — not on insider info or exclusive feeds.
+AGPL-3.0 for personal and academic use. Commercial license available for business applications.
 
-Recent builds also support optional **Adanos Market Sentiment** connectivity in **Data Sources → Alternative Data**. When configured, Equity Research can surface cross-source retail sentiment snapshots across Reddit, X, finance news, and Polymarket. Without an active Adanos connection, the feature remains dormant and the rest of the app behaves exactly as before.
-
-- **Native performance** — C++20 with Qt6, no Electron/web overhead
-- **Single binary** — no Node.js, no browser runtime, no JavaScript bundler
-- **Full buy-side analyst toolkit** — equity, portfolio, derivatives, fixed income, corporate finance, alternatives
-- **100+ data connectors** — from Yahoo Finance to government databases
-- **Free & Open Source** (AGPL-3.0) with commercial licenses available
+Optional **Adanos Market Sentiment** connectivity available in **Data Sources → Alternative Data** — surfaces retail sentiment across Reddit, X, finance news, and Polymarket. Dormant without an active connection.
 
 ---
 
