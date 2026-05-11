@@ -59,7 +59,7 @@ The script handles: compiler check, CMake, Qt6, Python, build, and launch.
 
 ---
 
-### Option 3 — Docker (CI / Developer Environments)
+### Option 2 — Docker (CI / Developer Environments)
 
 > **Note:** Docker is intended for CI/CD testing and development environments only.
 > For the best experience, use the pre-built installers in **Option 1** above.
@@ -75,7 +75,7 @@ docker run --rm -e DISPLAY=$DISPLAY -v /tmp/.X11-unix:/tmp/.X11-unix Cherry-Term
 
 ---
 
-### Option 4 — Build from Source (Manual)
+### Option 3 — Build from Source (Manual)
 
 > **Versions are pinned.** Use the exact versions below. Newer or older versions are unsupported and may fail to build or produce unstable binaries.
 
