@@ -2,20 +2,34 @@
 
 <div align="center">
 
-### **Your Thinking is the Only Limit. The Data Isn't.**
+<h3><strong>Your Thinking Is the Only Limit. The Data Isn’t.</strong></h3>
 
-State-of-the-art financial intelligence platform with institutional-grade financial analytics, AI automation, and unlimited data connectivity.
+State-of-the-art financial intelligence platform with institutional-grade analytics, AI automation, and unlimited data connectivity.
 
-<table>
-  <tr>
-    <td align="center" width="25%"><a href="https://raw.githubusercontent.com/Fincept-Corporation/FinceptTerminal/main/images/EquityResearch.png"><img src="https://raw.githubusercontent.com/Fincept-Corporation/FinceptTerminal/main/images/EquityResearch.png" width="100%"/></a><br/><sub><b>Equity Research</b></sub></td>
-    <td align="center" width="25%"><a href="https://raw.githubusercontent.com/Fincept-Corporation/FinceptTerminal/main/images/Portfolio.png"><img src="https://raw.githubusercontent.com/Fincept-Corporation/FinceptTerminal/main/images/Portfolio.png" width="100%"/></a><br/><sub><b>Portfolio</b></sub></td>
-    <td align="center" width="25%"><a href="https://raw.githubusercontent.com/Fincept-Corporation/FinceptTerminal/main/images/News.png"><img src="https://raw.githubusercontent.com/Fincept-Corporation/FinceptTerminal/main/images/News.png" width="100%"/></a><br/><sub><b>News</b></sub></td>
-    <td align="center" width="25%"><a href="https://raw.githubusercontent.com/Fincept-Corporation/FinceptTerminal/main/images/NodeEditor.png"><img src="https://raw.githubusercontent.com/Fincept-Corporation/FinceptTerminal/main/images/NodeEditor.png" width="100%"/></a><br/><sub><b>Node Editor</b></sub></td>
-  </tr>
-</table>
+<h3>Screenshots</h3>
+
+<p align="center">
+  <a href="./images/EquityResearch.png"><img src="./images/EquityResearch.png" alt="Equity Research" width="48%"></a>
+  <a href="./images/Portfolio.png"><img src="./images/Portfolio.png" alt="Portfolio" width="48%"></a>
+</p>
+<p align="center">
+  <a href="./images/News.png"><img src="./images/News.png" alt="News" width="48%"></a>
+  <a href="./images/NodeEditor.png"><img src="./images/NodeEditor.png" alt="Node Editor" width="48%"></a>
+</p>
+
+<sub>Click any image to view full size.</sub>
 
 </div>
+
+---
+
+## Quick Navigation
+
+- [About](#about)
+- [Features](#features)
+- [Installation](#installation)
+- [What Sets Us Apart](#what-sets-us-apart)
+- [Roadmap](#roadmap)
 
 ---
 
@@ -48,14 +62,14 @@ Clone and run the setup script — it installs all dependencies and builds the a
 
 ```bash
 # Linux / macOS
-git clone https://github.com/Dropio12/Cherry-Terminal.git
-cd Cherry-Terminal
+git clone https://github.com/Dropio12/CherryTerminal.git
+cd CherryTerminal
 chmod +x setup.sh && ./setup.sh
 ```
 
 The script handles: compiler check, CMake, Qt6, Python, build, and launch.
 
-> **Windows:** No setup script — use the manual build steps in Option 4 below. It's just two commands.
+> **Windows:** No setup script — use the manual build steps in Option 3 below. It's just two commands.
 
 ---
 
@@ -67,8 +81,8 @@ The script handles: compiler check, CMake, Qt6, Python, build, and launch.
 
 ```bash
 # Build from source (Linux + X11 required)
-git clone https://github.com/Dropio12/Cherry-Terminal.git
-cd Cherry-Terminal
+git clone https://github.com/Dropio12/CherryTerminal.git
+cd CherryTerminal
 docker build -t Cherry-Terminal .
 docker run --rm -e DISPLAY=$DISPLAY -v /tmp/.X11-unix:/tmp/.X11-unix Cherry-Terminal
 ```
@@ -102,8 +116,8 @@ docker run --rm -e DISPLAY=$DISPLAY -v /tmp/.X11-unix:/tmp/.X11-unix Cherry-Term
 #### Build (using CMake presets — recommended)
 
 ```bash
-git clone https://github.com/Dropio12/Cherry-Terminal.git
-cd Cherry-Terminal/fincept-qt
+git clone https://github.com/Dropio12/CherryTerminal.git
+cd CherryTerminal/fincept-qt
 ```
 
 **Step 1 — Configure** (one-time, or after `CMakeLists.txt` changes):
@@ -189,5 +203,3 @@ Recent builds also support optional **Adanos Market Sentiment** connectivity in 
 | **Future** | Mobile companion, cloud sync, community marketplace |
 
 ---
-
-
