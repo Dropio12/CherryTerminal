@@ -2,11 +2,11 @@
 
 <div align="center">
 
-### **Your Thinking Is the Only Limit. The Data Isn’t.**
+<h3><strong>Your Thinking Is the Only Limit. The Data Isn’t.</strong></h3>
 
 State-of-the-art financial intelligence platform with institutional-grade analytics, AI automation, and unlimited data connectivity.
 
-### Screenshots
+<h3>Screenshots</h3>
 
 <p align="center">
   <a href="./images/EquityResearch.png"><img src="./images/EquityResearch.png" alt="Equity Research" width="48%"></a>
